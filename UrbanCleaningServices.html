@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  
   <style>
     :root{
       --accent:#0b7285;
@@ -52,6 +53,7 @@
     }
   </style>
 </head>
+  
 <body>
   <header>
     <div class="container nav">
@@ -121,7 +123,7 @@
 
           <div style="margin-top:12px">
             <strong>Opening hours</strong>
-            <div style="color:var(--muted);margin-top:6px">Mon–Sun: 7:00 — 23:00 (Emergency 24/7)</div>
+            <div style="color:var(--muted);margin-top:6px">Mon–Sun: 9:00 — 23:00 (Emergency 24/7)</div>
           </div>
 
           <div style="margin-top:16px">
@@ -157,12 +159,13 @@
           <h3 style="margin-top:10px">Gallery</h3>
           <p style="color:var(--muted)">Photos of our teams, before/after examples, and equipment.</p>
           <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:8px">
-            <div style="height:120px;background:linear-gradient(120deg,#e6f6f8,#fef3e0);border-radius:8px;display:grid;place-items:center">Before</div>
+            <div style="height:120px;background:linear-gradient(120deg,#e6f6f8,#fef3e0);border-radius:8px;display:grid;place-items:center">Before </div> 
             <div style="height:120px;background:linear-gradient(120deg,#f0f9ff,#f3f4f6);border-radius:8px;display:grid;place-items:center">After</div>
             <div style="height:120px;background:linear-gradient(120deg,#eef2ff,#fff7ed);border-radius:8px;display:grid;place-items:center">Team</div>
             <div style="height:120px;background:linear-gradient(120deg,#f0fdf4,#fff1f2);border-radius:8px;display:grid;place-items:center">Equipment</div>
           </div>
         </div>
+            
     </section>
 
     <!-- Contact Form -->
@@ -181,6 +184,29 @@
       </div>
     </section>
 
+     <section style="margin-top:22px" id="feedback">
+      <div style="background:var(--card);padding:20px;border-radius:12px;box-shadow:0 6px 16px rgba(15,23,42,0.03)">
+        <h2 style="margin-top:0">Customer Feedback</h2>
+        <p style="color:var(--muted)">We value your opinion! Please rate our service and leave a comment below.</p>
+
+        <form action="https://formspree.io/f/mblznjen" method="POST" style="display:grid;grid-template-columns:1fr;gap:10px">
+          <label for="rating"><strong>Rate our service</strong></label>
+          <div id="rating" style="display:flex;gap:6px;align-items:center">
+            <label><input type="radio" name="rating" value="1"> ⭐</label>
+            <label><input type="radio" name="rating" value="2"> ⭐⭐</label>
+            <label><input type="radio" name="rating" value="3"> ⭐⭐⭐</label>
+            <label><input type="radio" name="rating" value="4"> ⭐⭐⭐⭐</label>
+            <label><input type="radio" name="rating" value="5"> ⭐⭐⭐⭐⭐</label>
+          </div>
+
+          <textarea class="input" name="comment" placeholder="Write your feedback..." rows="4" required></textarea>
+          <input class="input" type="text" name="name" placeholder="Your name (optional)">
+          <input class="input" type="email" name="email" placeholder="Your email (optional)">
+          <button class="btn-primary" type="submit">Submit Feedback</button>
+        </form>
+      </div>
+    </section>     
+      
     <footer>
       <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
         <div style="color:var(--muted)">© <span id="year"></span> Urban Cleaning Services Ajman</div>
